@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Kullanımı</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .kapsayici {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            overflow: hidden;
+        }
+        
+        .ustyazi {
+            text-align: center;
+            margin-bottom: 3;
+            margin-left: -33vh;
+        }
+        
+        progress {
+            appearance: none;
+            width: 40vh;
+            height: 13px;
+        }
+        
+         ::-webkit-progress-bar {
+            background-color: #568383;
+            border-radius: 25px;
+        }
+        
+         ::-webkit-progress-value {
+            background-color: #3b3b3b;
+            border-radius: 25px;
+        }
+        
+        .altyazi {
+            text-align: center;
+            margin-top: 3px;
+            margin-right: -32vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="kapsayici">
+        <div class="ustyazi">Html</div>
+        <progress max="100" value="67"></progress>
+        <div class="altyazi">%67</div>
+        <div class="ustyazi">Css</div>
+        <progress max="100" value="74"></progress>
+        <div class="altyazi">%74</div>
+        <div class="ustyazi">Javascript</div>
+        <progress max="100" value="83"></progress>
+        <div class="altyazi">%83</div>
+
+    </div>
+</body>
+
+</html>
